@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     druid:
@@ -6,3 +5,5 @@ spring:
       password: root
       username: root
       driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8001
