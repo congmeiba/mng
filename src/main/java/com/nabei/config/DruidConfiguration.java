@@ -21,8 +21,8 @@ public class DruidConfiguration {
     @Bean
     public ServletRegistrationBean ruidStatViewServle() {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
-        servletRegistrationBean.addInitParameter("allow", "127.0.0.1");
-        servletRegistrationBean.addInitParameter("deny", "192.168.1.73");
+        //servletRegistrationBean.addInitParameter("allow", "127.0.0.1");
+        //servletRegistrationBean.addInitParameter("deny", "192.168.1.73");
         servletRegistrationBean.addInitParameter("loginUsername", "root");
         servletRegistrationBean.addInitParameter("loginPassword", "nb@2018");
         //是否能够重置数据.
