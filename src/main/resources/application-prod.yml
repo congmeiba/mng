@@ -6,7 +6,7 @@ spring:
     druid:
       url: jdbc:mysql://localhost:3306/mng?useUnicode=TRUE&characterEncoding=UTF8&MVCC=TRUE&LOCK_TIMEOUT=10000
       password: root
-      username: root
+      username: 123456
       driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   #请求编码设置
