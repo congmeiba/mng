@@ -1,4 +1,4 @@
-package com.nabei.modules.controller.user;
+package com.nabei.modules.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

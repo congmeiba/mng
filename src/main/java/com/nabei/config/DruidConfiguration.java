@@ -1,21 +1,19 @@
 package com.nabei.config;
 
 
-import com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @Auther: huangxiaosen
  * @Date: 2018/9/25 00:49
  * @Description:
  */
-@Configurable
+@Configuration
 public class DruidConfiguration {
 
 

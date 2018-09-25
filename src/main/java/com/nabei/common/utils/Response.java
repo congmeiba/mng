@@ -10,17 +10,17 @@ import java.util.HashMap;
 public class Response<T> extends HashMap<String,Object>{
 
 
-    Response(){
+    public Response(){
         put("code",ServerCode.SUCCESS.getCode());
         put("message",ServerCode.SUCCESS.getMessage());
     }
 
-    Response(Integer errorCode, String message) {
+    public Response(Integer errorCode, String message) {
         put("code",errorCode);
         put("message",message);
     }
 
-    Response(Integer errorCode, String message, T data) {
+    public Response(Integer errorCode, String message, T data) {
         put("code",errorCode);
         put("message",message);
         put("data",data);
