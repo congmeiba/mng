@@ -13,7 +13,7 @@ spring:
     druid:
       url: jdbc:mysql://localhost:3306/mng?useUnicode=TRUE&characterEncoding=UTF8&MVCC=TRUE&LOCK_TIMEOUT=10000
       username: root
-      password: 123456
+      password: nb@123
       driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
   #请求编码设置
@@ -25,8 +25,8 @@ spring:
   #Redis
   redis:
     database: 0
-    host: localhost
-    port: 6379
+    host: 47.104.62.153
+    port: 6378
     password:
     timeout: 6000ms #连接超时时长
     jedis:
@@ -61,3 +61,6 @@ mybatis-plus:
       #缓存关闭
       cache-enabled: false
       call-setters-on-nulls: true
+mng:
+  redis:
+    open: true #是否开启redis缓存
